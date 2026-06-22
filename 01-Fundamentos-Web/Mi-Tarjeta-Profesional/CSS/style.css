@@ -1,64 +1,69 @@
-body{
-    background-color: rgb(238, 238, 91);
-    font-family: Arial, sans-serif;
-    color: rgb(51, 0, 255);
-    text-align:left;
+:root{
+    --border-test: 3px solid black;
+    --color1: rgb(238, 238, 91);
+    --color2: white;
+    --color3: rgba(1, 53, 165, 0.79);
+    --color4:skyblue;
+    --color5:rgb(51, 0, 255);
+    /*tipos de texto*/
+    --text1:Arial, sans-serif;
+    --border-radius1: 20px;
+
 }
 
-h2{
-    color: #2c3e50;
-}
-h3{
-    color:darkblue;
-}
-p{
-    color:#444444;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    font-family:var(--text1) ;
+    color: var(--color3);
+    align-items: center;
+
+
 }
 
 footer{
-    background-color: rgb(230, 205, 209);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color4);
+    width: 80%;
     padding: 20px;
-    border: 2px solid black;
-     margin: 10px auto;
-    width: 400px;
-   
+    border-radius: var(--border-radius1);
+    margin: 20px;
 }
 
 /*Encabezado*/
 /*parte del modelado flex box */
-header{
-    color: aliceblue;
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: var(--color2);
     text-align: center;
-    background-color: rgba(1, 53, 165, 0.79);
-    border-radius: 10px;
-    padding: 10px 30px;
-    margin: 0px auto 20px;
-    max-width: 50%;
-    max-height:100%;
+    background-color: var(--color3);
+    border-radius: var(--border-radius1);
+    padding: 30px;
+    margin: 30px;
+    width: 80%;
+    min-width: 600px;
 }
-h1{
-    color: rgb(255, 255, 255);
+
+.hero-image{
     display: flex;
+    min-width: 250px;
     
 }
-    .hero{
-        display: flex;
-        align-items:center;
-        width: 100%;
-        min-width: 450px;
-    }
-    .image-edit{
-    width: 85%;      
-    max-height: 250px;    
-
+.image-edit{
+    display: flex;     
+    width: 100%;
+    border: var(--color1) solid 2px;
+    border-radius: var(--border-radius1);
     }
 .hero-info {
-width: 70%;
-height: auto;
-  display: flex;
-  flex-direction: column;  
-  gap:30px;
-  align-items: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;  
+    gap:30px;
+    align-items: center;
 }
 .hero-text{
     margin-left: 10%;
@@ -66,27 +71,15 @@ height: auto;
     flex-direction: column;
     gap: 0px;
     width: 100%;
-      align-items: center;
-      justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
-.hero-text h1{
-    border-radius: 10px;
-    width: 100%;
-    justify-content: center;
-}
+
 .hero-text p{
-    color: rgb(249, 249, 249);
+    color: var(--color2);
     font-size:30px;
 }
-    nav{
-        display:flex;
-        flex-direction: column;
-        gap:none;
-        width: 100%;
-        justify-content: center;
-    }
-
 .hero-tecnologias{
     width: 100%;
     display: flex;
@@ -95,18 +88,29 @@ height: auto;
     justify-content: center;
 }
 .hero-tecnologias p{
+    color: black;
+    border: white 3px solid;
     border-radius: 5px;
     background-color: rgb(233, 228, 121);
     padding: 3px 10px 3px 10px;
 }
+/*botones header*/
 .a-hero{
-    display: flex;
-    gap: 30px;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap:10px;
+    font-size: 20px;
 }
+
 .a-hero a{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     color: wheat;
     background-color: black;
-    padding: 10px;
     border: white solid 2px;
     border-radius: 20px;
     text-decoration: none;
@@ -117,22 +121,31 @@ height: auto;
     background-color: rgb(161, 173, 158);
 }
 .portafolio{
-    font-size: 30px;
-    width: auto;
+    display: flex;
+    flex: 1;
 }
 .subportafolio{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-     width: auto;
-       font-size: 20px;
+    flex: 1;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:20px;
+    width: 80%;
+    background-color: var(--color4);
+    border-radius: 20px;
+
 }
 
 /*tegnologias cards*/
 .proy-card{
     border: 5px solid rgb(238, 238, 91) ;
     border-radius: 10px;
-
     background-color: skyblue;
     padding: 30px;
     display: flex;
@@ -179,19 +192,17 @@ justify-content: center;
 }
 /*etiquetas*/
 .etiqueta{
-    
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    
-    padding:20px;
-    border: 2px solid black;
-    margin:auto;
-    width: 50%;
+    border-radius: 20px;
+    width: 1fr;
+    padding: 20px;
    
 }
 /* area proyectos*/
 .proyectos{
-      border: 3px solid red;
-    padding: 2%;
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;

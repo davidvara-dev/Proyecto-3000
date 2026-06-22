@@ -2,9 +2,6 @@
 
 Fecha de inicio:
 
-Objetivo:
-
-Conseguir ingresos de USD 3000 mensuales como desarrollador Full Stack antes de finalizar el Proyecto 3000.
 
 ---
 
