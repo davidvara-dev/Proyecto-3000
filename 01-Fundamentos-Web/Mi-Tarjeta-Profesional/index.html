@@ -1,78 +1,150 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>David Vara | Proyecto </title>
-</head>
-<body>
-    <header> 
-       <h1> David Vara</h1>
-        <p>Future Full Stack Developer</p>
-    </header>
-  
-    <main>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>David Vara | Proyecto </title>
+    </head>
+    <body>
+        
+        <header class="hero"> 
+            <div class="hero-image"><img src="img/foto.png" alt="mi foto" class="image-edit"> </div>
+        <div class="hero-info">
+            <div class="hero-text">
+    <h1> David Vara</h1>
+            <p>Future Full Stack Developer</p>
 
-<section>
-    <h2>INFORMACIÓN PERSONAL</h2>
-    <P>Nacionalidad: Peruana</P>
-    <p>Edad: 35</p>
-    <p>Teléfono: 999858585</p>
-    <p>Email: davidva.dev@gmail.com </p>
-    <p>Ubicación: Lima - Perú</p>
-</section>
+            </div>
+        <div class="hero-tecnologias">
+            <p>HTML</p>
+            <P>CSS</P>
+            <p>JavaScript</p>
+            <p>Java</p>
+        </div>
+        <nav class="a-hero">
+            <section class="portafolio">
+                <a href="#">Portafolio</a>
+            </section>
+            <section class="subportafolio">
 
- <section>
-      <h2>SOBRE MÍ </h2>
-    <p> Actualmente estoy formación para ser un Desarrollador Full Stack competitivo.
-    </p>
-    <p>Busco empezar en el campo de la programación y conocer más de este mundo que es muy interesante</p>
-    </section>
-    <section>
-    <h2> TECNOLOGÍAS</h2>
-        <p>Las tecnologías que actualmente manejo son: </p>
+                <a href="#">GitHub</a>
+
+                <a href="#">LinkedIn</a>
+            </section>
+
+            </nav>
+        </div>
+            
+        </header>
+    
+        <main>
+
+
+
+    <section class="etiqueta">
+        <h2>SOBRE MÍ </h2>
+        <article>
+            <h3>DESCRIPCIÓN</h3>
+            <p> Actualmente estoy formación para ser un Desarrollador Full Stack competitivo.
+        </p>
+        <p>Busco empezar en el campo de la programación y conocer más de este mundo que es muy interesante</p>
+    </article>
+    
+        <article> <H3>VALORES</H3>
             <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
+                <li>Honestidad</li>
+                <li>Respeto</li>
+                <li>Solidaridad</li>
+                <li>Puntualidad</li>
             </ul>
-
-            <p>Tecnologías que estaré explorando:</p>
-         <ul>
-            <li>JavaScript</li>
-            <li>Postgres</li>
-            <li>React</li>
-            <li>Spring Bot</li>
-         </ul>
-    </section>
-
-    <section>
-   <h2> ME ENCUENTRO EN BUSQUEDA DE:</h2>
-        <ul>
+        </article>
+    <article>
+    <H3>OBJETIVOS</H3>
+        <UL>
             <li>Empezar en el sector informático dedicado a la programación</li>
-            <li>Desarrollar programas e implementarlos en mi portafolio</li>
-            <li>Adquirir nuevos conocimientos e implementarlos en nuevos proyectos</li>
-        </ul>
+                <li>Desarrollar programas e implementarlos en mi portafolio</li>
+                <li>Adquirir nuevos conocimientos e implementarlos en nuevos proyectos</li>
+        </UL>
+    </article>
     
     </section>
-    <section>
-        <h2 >PROYECTOS REALIZADOS</h2>
-            <h3>Calculadora</h3>
-            <p>Calculadora diseñada con las operaciones básicas</p>
-            <h3>Programa de Tipos de ordenamiento</h3>
-            <p>Realiza representación gráfica del ordenamiento de datos según los métodos de burbuja,selección e inserción</p>
-            <h3>Control de inventario Fábrica de botellas</h3>
-            <p>Permite el control de stock en los productos e insumos de una empresa, con funciones CRUD</p>
+
+        <section class="etiqueta">
+        <h2> TECNOLOGÍAS</h2>
+            <p>Las tecnologías que actualmente manejo son: </p>
+                <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PostgreSQL</li>
+                <li>Spring Boot</li>
+                </ul>
+        </section>
+
+        <section class="etiqueta">
+             <h2 >PROYECTOS REALIZADOS</h2>
+            <div class="proyectos"> 
+
+            <article class="proy-card">
+                <img src="img/calculadora01.png" alt="calculadora imagen">
+                <h3>Calculadora</h3>
+                <p>Calculadora diseñada con las operaciones básicas</p>
+                <div class="proy-card-tecnologias">
+                    <span>Java</span>
+                    <span>POO</span>
+                </div>
+                <a href="">Ver Proyecto</a>
+            </article>
+            <article class="proy-card">
+                                <img src="img/enproceso.png" alt="proyecto-en-proceso">
+                <h3>Programa de Tipos de ordenamiento</h3>
+                <p>Realiza representación gráfica del ordenamiento de datos según los métodos de burbuja,selección e inserción</p>
+                 <div class="proy-card-tecnologias">
+                    <span>Java</span>
+                    <span>POO</span>
+                </div>
+                <a href="">Ver Proyecto</a>
+            </article>
+            <article  class="proy-card"  >
+                                <img src="img/enproceso.png" alt="proyecto-en-proceso">
+
+                <h3>Control de inventario Fábrica de botellas</h3>
+                <p>Permite el control de stock en los productos e insumos de una empresa, con funciones CRUD</p>
+                 <div class="proy-card-tecnologias">
+                    <span>Java</span>
+                    <span>POO</span>
+                </div>
+                <a href="">Ver Proyecto</a>
+            </article> 
+            </div>
+           
+        </section>
+    
+        <section class="etiqueta">
+        <h2>CONTACTO</h2>
+        <p>- Teléfono: 999858585</p>
+        <p>- Email: davidva.dev@gmail.com </p>
+        <P>- GitHub: davidva.dev</P>
+        <p>- LinkedIn: NN </p>
+        <p>- Ubicación: Lima - Perú</p>
+
     </section>
-   
-    </main>
-     <footer>
-        <h2>
-            REFLEXIÓN
-        </h2> Una pequeña reflexión: Ser inteligente y hábil no reemplaza los valores y 
-        el amor por la vida y las personas. 
-    Que el conocimiento no nos quite nuestra parte humanitaria </footer>
-   
-</body>
-</html>
+        </main>
+        <footer>
+            <section>
+                <h2>REDES SOCIALES</h2>
+                <article>
+                    <button>Instagram</BUTton>
+                    <button>YouTube</button>
+                </article>
+            </section>
+
+            <section>
+                <h2>Derechos de autor</h2>
+                <p>Aca ira los derechos de autor,nose que poner</p>
+            </section>
+        </footer> 
+    </body>
+    </html>

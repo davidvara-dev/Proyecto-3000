@@ -1,0 +1,19 @@
+.grid-prb{
+
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+article{
+    display: grid;
+     border: 2px solid rgb(203, 55, 55);
+}
+p{
+    display: grid;
+     border: 2px solid rgb(203, 55, 55);
+}
+span{
+    display: grid;
+     border: 2px solid rgb(203, 55, 55);
+}
